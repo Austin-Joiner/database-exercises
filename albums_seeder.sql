@@ -1,11 +1,13 @@
 USE codeup_test_db;
-/*mysql -u codeup_test_user -p < albums_seeder.sql*/
+/*mysql -u codeup_test_user -p < albums_seeder.sql;*/
+
+TRUNCATE TABLE albums;
+
 INSERT INTO albums (artist, name, release_date, sales, genre)
 VALUES ('Michael Jackson', 'Thriller', 1982, 51.2, 'Pop, post-disco, funk, rock'),
  ('AC/DC', 'Back in Black', 1980, 30.1, 'Hard rock'),
  ('Whitney Houston', 'The Bodyguard', 1992, 28.7, 'R&B, soul, pop, soundtrack'),
  ('Pink Floyd', 'The Dark Side of the Moon', 1973, 24.8, 'Progressive rock'),
- ('Eagles', 'Their Greatest Hits', 1976, 41.2, 'Country rock, soft rock, folk rock'),
  ('Eagles', 'Their Greatest Hits', 1976, 41.2, 'Country rock, soft rock, folk rock'),
  ('Meat Loaf', 'Ball Out of Hell', 1977, 22, 'Hard rock, glam rock, progressive rock'),
  ('Eagle', 'Hotel California', 1976, 31.8, 'Soft rock'),
