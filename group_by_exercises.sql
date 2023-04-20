@@ -12,4 +12,4 @@ SELECT last_name FROM employees WHERE last_name LIKE '%q%' AND last_name NOT LIK
 
 SELECT CONCAT(COUNT(*),' ', last_name) AS 'Unique Count, unique last names with a ''q'' but not ''qu''' FROM employees WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%' GROUP BY last_name; -- problem 6 done
 
-SELECT CONCAT(COUNT(*),' ', gender) AS 'Unique code for genders for ''Irena'', ''Vidya'', ''Maya''' FROM employees WHERE first_name IN ('Irena', 'Vidya', 'Maya') GROUP BY gender;
+SELECT CONCAT(COUNT(*),' ', gender) AS 'Unique code for genders for ''Irena'', ''Vidya'', ''Maya''' FROM employees WHERE first_name IN ('Irena', 'Vidya', 'Maya') GROUP BY gender;-- problem 7 done
